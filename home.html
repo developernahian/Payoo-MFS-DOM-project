@@ -11,20 +11,67 @@
 <body>
 
 
-    <main class="flex justify-center items-center min-h-screen">
+    <main class="flex justify-center">
         <div class="mockup-phone">
             <div class="camera"></div>
             <div class="display">
-              <div class="artboard artboard-demo phone-1">
+              <div class="artboard artboard-demo phone-2">
 
 
-                
+                <!-- available balance -->
+                <div class="stats shadow">
+                    <div class="stat">
+                      <div class="stat-value">9400</div>
+                      <div class="stat-desc">Available Balance</div>
+                    </div>
+                  </div>
+
+
+                  <div class="divider"></div>
+
+
+                  <!-- user action button -->
+                   <div>
+                    <button class="btn btn-lg">Add Money</button>
+                    <button class="btn btn-lg">Cash Out</button>
+                   </div>
+
+                   <div class="divider"></div>
+
+
+
+
+                   <!-- add money form  start -->
+                   <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <form class="card-body">
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Amount</span>
+                        </label>
+                        <input type="text" placeholder="Amount" class="input input-bordered" required />
+                      </div>
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">pin</span>
+                        </label>
+                        <input type="password" placeholder="password" class="input input-bordered" required autocomplete="off" />
+                      </div>
+                      <div class="form-control mt-6">
+                        <button class="btn btn-primary">Add Money</button>
+                      </div>
+                    </form>
+                  </div>
+                   <!-- add money form  end-->
+
 
 
               </div>
             </div>
           </div>
     </main>
+
+
+    <script src="./js/home.js"></script>
 
 
 </body>
