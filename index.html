@@ -13,7 +13,7 @@
         <div class="mockup-phone">
             <div class="camera"></div>
             <div class="display">
-              <div class="artboard artboard-demo phone-2">
+              <div class="artboard artboard-demo phone-1">
 
 
                 <!-- Login section -->
@@ -27,20 +27,22 @@
                             <label class="label">
                               <span class="label-text">Phone Number</span>
                             </label>
-                            <input type="text" placeholder="Enter Phone Number" class="input input-bordered" required />
+                            <input id="phone-number" type="text" placeholder="Enter Phone Number" class="input input-bordered" required />
                           </div>
                           <div class="form-control">
                             <label class="label">
                               <span class="label-text">Pin</span>
                             </label>
-                            <input type="password" placeholder="Enter Pin" class="input input-bordered" required />
+                            <input type="password" placeholder="Enter Pin" class="input input-bordered" required autocomplete="off"/>
                             <label class="label">
                               <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
                             </label>
                           </div>
+
                           <div class="form-control mt-6">
-                            <button class="btn btn-primary">Login</button>
+                            <button id="button-login" class="btn btn-primary">Login</button>
                           </div>
+
                         </form>
                       </div>
                     </div>
@@ -53,5 +55,9 @@
             </div>
           </div>
     </main>
+
+
+    <script src="./js/login.js"></script>
+
 </body>
 </html>
